@@ -1,0 +1,23 @@
+# Internal working files, kept out of the public preview
+.qa/
+Project image from facebook/
+WEBSITE-PLAN.md
+HOMEPAGE-NOTES.md
+ASSET-SOURCES.md
+
+# Original template pages and their assets, not yet rebuilt for Galleys.
+# Remove an entry once its page is ready to publish.
+about.html
+services.html
+drain-cleaning.html
+emergency-plumbing.html
+leak-detection.html
+pipe-replacement.html
+sewer-inspection.html
+tap-installation.html
+toilet-installation.html
+water-heater.html
+app.js
+pages.js
+home-motion.css
+assets/*.png
