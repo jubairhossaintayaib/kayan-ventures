@@ -36,7 +36,7 @@ module.exports = [
     checklist: ['Review of your lead and customer workflow', 'CRM selection or custom setup plan', 'Pipeline stages and useful customer fields', 'Team responsibilities and access planning', 'Agreed inquiry capture connections', 'Workflow walkthrough and handover'],
     steps: [['Map the journey', 'We look at where leads come from, how your team follows up, and what happens when a lead becomes a customer.'], ['Set up your workflow', 'We plan the platform, fields, stages, and connections around your priorities.'], ['Try it with your team', 'We walk through representative inquiries, refine the setup, and help your team understand the new workflow.']],
     questions: [['Will you build a custom CRM or use an existing one?', 'That depends on your workflow. We’ll discuss whether an existing CRM, a configured setup, or a custom system is the right fit before agreeing the scope.'], ['Can you help move existing customer data?', 'We can review your current spreadsheets or systems and agree a migration plan. The approach depends on the data format, quality, and access available.'], ['Can we start with a small team?', 'Yes. We can focus first on the stages and information your team needs today, then discuss additional workflows later.']],
-    related: ['custom-websites', 'meta-ads-management']
+    related: ['custom-websites', 'landing-pages']
   },
   {
     id: 'ecommerce', slug: 'ecommerce-websites', name: 'Ecommerce websites', choice: 'Ecommerce website', number: '03',
@@ -55,7 +55,7 @@ module.exports = [
     checklist: ['Store structure and product content plan', 'Branded, responsive storefront', 'Product and collection pages', 'Agreed cart and checkout workflow', 'Order notifications and integrations as scoped', 'Store testing and management walkthrough'],
     steps: [['Get to know your store', 'We discuss your products, audience, delivery process, and how you currently receive orders.'], ['Shape the shopping journey', 'We plan and build the storefront, product pages, and ordering experience.'], ['Test from browse to order', 'We review the customer journey and agreed integrations, then prepare your team for launch.']],
     questions: [['Can you also build order and inventory management?', 'Yes. We offer these together as one service. We’ll agree which parts need to connect to your storefront and how those connections should work.'], ['Can you add local payment or delivery services?', 'We can review the providers you want to use and scope the integration after checking their technical requirements and your account access.']],
-    related: ['order-inventory-management', 'meta-ads-management']
+    related: ['order-inventory-management', 'landing-pages']
   },
   {
     id: 'landing-pages', slug: 'landing-pages', name: 'Landing pages', choice: 'Landing page', number: '04',
@@ -73,8 +73,8 @@ module.exports = [
     ],
     checklist: ['Campaign goal and page outline', 'Offer and content structure', 'Custom responsive page design', 'Agreed inquiry or order flow', 'Measurement requirements scoped with you', 'Link, form, and mobile checks before launch'],
     steps: [['Define the next step', 'We agree the audience, the offer, and the single most important action for your visitors.'], ['Build the story', 'We shape the content and design, then build the page and its contact or order flow.'], ['Connect the campaign', 'We check the destination links and agreed measurement setup before your campaign sends visitors to the page.']],
-    questions: [['Do I need a full website first?', 'Not necessarily. A standalone landing page can be a starting point for a specific offer. We’ll discuss the domain and hosting setup with you.'], ['Can you manage the ads as well?', 'Yes. Meta Ads Management is a separate service that can be planned alongside your landing page for a consistent campaign journey.'], ['Can we test different versions?', 'We can scope different messages or page variations and agree how to measure them. Testing requirements are discussed as part of the project.']],
-    related: ['meta-ads-management', 'crm-lead-management']
+    questions: [['Do I need a full website first?', 'Not necessarily. A standalone landing page can be a starting point for a specific offer. We’ll discuss the domain and hosting setup with you.'], ['Can we test different versions?', 'We can scope different messages or page variations and agree how to measure them. Testing requirements are discussed as part of the project.']],
+    related: ['ecommerce-websites', 'crm-lead-management']
   },
   {
     id: 'order-management', slug: 'order-inventory-management', name: 'Order & inventory management', choice: 'Order & inventory management', number: '05',
@@ -94,24 +94,6 @@ module.exports = [
     steps: [['Understand your operations', 'We look at how orders arrive, where stock is tracked, and how your team packs, dispatches, and handles returns.'], ['Connect the workflow', 'We build the agreed order and inventory functions, with clear rules for statuses and stock changes.'], ['Check real scenarios', 'We test representative orders, cancellations, and stock adjustments together before handover.']],
     questions: [['Are order management and inventory one service?', 'Yes. We treat them as one connected service so orders and stock can be planned together, with a scope that fits your operations.'], ['Can this work with our existing ecommerce store?', 'We’ll review your store and its integration options first. We can then agree what data can be connected and how updates should flow.'], ['Can the system handle returns or multiple stock locations?', 'We can include these in the planned scope. Share your process so we can define the rules and complexity before building.']],
     related: ['ecommerce-websites', 'crm-lead-management']
-  },
-  {
-    id: 'meta-ads', slug: 'meta-ads-management', name: 'Meta Ads Management', choice: 'Meta Ads Management', number: '06',
-    headline: ['Your next customer.', 'Let’s start a conversation.'],
-    description: 'Meta Ads Management for businesses in Bangladesh. Facebook and Instagram campaign planning, creative direction, monitoring, and ongoing refinement.',
-    intro: 'Put your business in front of potential customers on Facebook and Instagram. We help plan, manage, and refine campaigns around your offer and your business goals.',
-    audience: 'For service businesses, local brands, and ecommerce teams ready to advertise.',
-    overview: ['A clear plan.', 'A campaign with purpose.'],
-    overviewText: 'Good campaign work starts before an ad goes live. We get clear on your audience, your offer, and what should happen after the click—then use the campaign’s results to guide the next decisions.',
-    features: [
-      ['Campaign planning', 'Agree the objective, audience approach, budget, and destination so every campaign has a clear purpose.'],
-      ['Creative direction and messaging', 'Plan the ad angles, copy, and creative requirements that communicate your offer. Production needs are agreed with you.'],
-      ['Launch and ongoing management', 'Set up the agreed campaigns, monitor delivery, and refine the approach as useful signals emerge.'],
-      ['Reporting that supports decisions', 'Review the measures that matter to your goal and explain what we’re learning and what to try next.']
-    ],
-    checklist: ['Business, audience, and offer review', 'Campaign plan and agreed advertising budget', 'Ad messaging and creative requirements', 'Account access and measurement review', 'Campaign setup, monitoring, and refinement', 'Reporting and a clear next-step discussion'],
-    steps: [['Align on the goal', 'We discuss your offer, audience, existing ad activity, and the outcome you want to work toward.'], ['Prepare and launch', 'We agree the campaign plan and creative, review access and measurement needs, and prepare the ads for launch.'], ['Learn and refine', 'We review campaign activity, explain the results, and adjust the next steps with your business priorities in mind.']],
-    questions: [['Do you manage both Facebook and Instagram campaigns?', 'Yes. We plan Meta campaigns around your audience and goals, including Facebook and Instagram where appropriate.'], ['Do we need a landing page?', 'It depends on the campaign. We can review your current website or plan a dedicated landing page if the offer needs a more focused destination.'], ['What do we need to provide?', 'Your business goals, offer details, brand assets, and access to the relevant business and advertising accounts. We’ll agree creative responsibilities and the advertising budget before launch.'], ['Can you guarantee leads or sales?', 'No fixed result is guaranteed. Performance depends on your offer, audience, creative, budget, and customer journey. We focus on clear planning, useful measurement, and ongoing refinement.']],
-    related: ['landing-pages', 'ecommerce-websites']
   }
 ];
+module.exports.push(require('./meta-consulting.cjs'));

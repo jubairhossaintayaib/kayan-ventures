@@ -27,23 +27,26 @@ const form = document.querySelector('#contact-form');
 const result = document.querySelector('#form-result');
 const messageLink = document.querySelector('#message-link');
 const serviceSelect = document.querySelector('#service-select');
-function clearPreparedMessage() { result.hidden = true; messageLink.removeAttribute('href'); }
-document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => { serviceSelect.value = link.dataset.service; clearPreparedMessage(); }));
-form.addEventListener('input', clearPreparedMessage);
-form.addEventListener('change', clearPreparedMessage);
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  for (const field of form.querySelectorAll('[required]')) {
-    field.setCustomValidity(field.value.trim() ? '' : 'Please fill out this field.');
-    if (!field.reportValidity()) return;
-  }
-  const data = new FormData(form);
-  const value = key => String(data.get(key) || '').trim();
-  const message = ['Hi Kayan Ventures! I’d like to discuss a project.', '', `Name: ${value('name')}`, ...(value('business') ? [`Business: ${value('business')}`] : []), `Contact: ${value('contact')}`, `Interested in: ${value('service')}`, '', value('message')].join('\n');
-  messageLink.href = `https://wa.me/8801314797479?text=${encodeURIComponent(message)}`;
-  result.hidden = false;
-  messageLink.focus({ preventScroll: true });
-  result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
-});
-form.querySelectorAll('[required]').forEach(field => field.addEventListener('input', () => field.setCustomValidity('')));
+// Service pages have no contact form.
+if (form) {
+  function clearPreparedMessage() { result.hidden = true; messageLink.removeAttribute('href'); }
+  document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => { serviceSelect.value = link.dataset.service; clearPreparedMessage(); }));
+  form.addEventListener('input', clearPreparedMessage);
+  form.addEventListener('change', clearPreparedMessage);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    for (const field of form.querySelectorAll('[required]')) {
+      field.setCustomValidity(field.value.trim() ? '' : 'Please fill out this field.');
+      if (!field.reportValidity()) return;
+    }
+    const data = new FormData(form);
+    const value = key => String(data.get(key) || '').trim();
+    const message = ['Hi Kayan Ventures! I’d like to discuss a project.', '', `Name: ${value('name')}`, ...(value('business') ? [`Business: ${value('business')}`] : []), `Contact: ${value('contact')}`, `Interested in: ${value('service')}`, '', value('message')].join('\n');
+    messageLink.href = `https://wa.me/8801314797479?text=${encodeURIComponent(message)}`;
+    result.hidden = false;
+    messageLink.focus({ preventScroll: true });
+    result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
+  });
+  form.querySelectorAll('[required]').forEach(field => field.addEventListener('input', () => field.setCustomValidity('')));
+}
 document.querySelector('#year').textContent = new Date().getFullYear();

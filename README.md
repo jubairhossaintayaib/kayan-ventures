@@ -16,9 +16,9 @@ Six standalone pages are available from the navigation and homepage service card
 - `ecommerce-websites.html`
 - `landing-pages.html`
 - `order-inventory-management.html`
-- `meta-ads-management.html`
+- `meta-ads-consulting.html`
 
-Order and inventory management are one combined service. Meta Ads Management is service six. Each page includes its own content, FAQs, related services, WhatsApp links, and a contact form with the relevant service selected.
+Order and inventory management are one combined service. Each page includes its own content, FAQs, and WhatsApp links with a message about that service; the contact form lives on the homepage.
 
 Edit `scripts/service-content.cjs` for service content and `services.css` for page-specific layout. Run `node scripts/build-services.cjs` after changing content or shared homepage navigation, footer, form, or service illustrations. This refreshes the committed static pages; no build command is needed to serve them. The homepage palette and layout remain independent.
 
@@ -36,7 +36,7 @@ Section sequence: hero, introduction, services, call to action, about, process, 
 
 Primary yellow: `#FFDD00`; ink: `#181818`; warm white: `#FAF8F0`.
 The supplied Kayan logo provides the handwritten wordmark. Page typography is DM Sans, a geometric web-font alternative to the reference brand's Circular. Google Fonts is loaded with a local Arial fallback.
-Illustrations are original HTML/CSS. Celures appears only in the footer as our sister concern. No pricing or unverified performance claims are shown.
+Illustrations are original HTML/CSS. Celures is listed in the footer as our sister concern and is visible within the supplied Ads Manager screenshot. Meta Ads Consulting costs BDT 5,000 for two one-hour sessions; other services have no published pricing. The case study shows selected-campaign results, not promised outcomes. Edit scripts/meta-consulting.cjs and scripts/meta-sections.cjs for the consultation offer and case study.
 
 ## Contact behavior
 
