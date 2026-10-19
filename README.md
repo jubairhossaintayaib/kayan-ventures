@@ -36,7 +36,7 @@ Section sequence: hero, introduction, services, call to action, about, process, 
 
 Primary yellow: `#FFDD00`; ink: `#181818`; warm white: `#FAF8F0`.
 The supplied Kayan logo provides the handwritten wordmark. Page typography is DM Sans, a geometric web-font alternative to the reference brand's Circular. Google Fonts is loaded with a local Arial fallback.
-Illustrations are original HTML/CSS. Celures is listed in the footer as our sister concern and is visible within the supplied Ads Manager screenshot. Meta Ads Consulting costs BDT 5,000 for two one-hour sessions; other services have no published pricing. The case study shows selected-campaign results, not promised outcomes. Edit scripts/meta-consulting.cjs and scripts/meta-sections.cjs for the consultation offer and case study.
+Illustrations are original HTML/CSS. Celures is listed in the footer as our sister concern and is visible within the supplied Ads Manager screenshot. Meta Ads Consulting costs BDT 5,000 for two one-hour sessions; ecommerce plans cost BDT 2,500/month for up to 100,000 monthly visitors or BDT 10,000/month for up to 1,000,000. Both include backend order management and done-for-you updates. Other services have no published pricing. The case study shows selected-campaign results, not promised outcomes. Edit scripts/meta-consulting.cjs and scripts/meta-sections.cjs for the consultation offer and case study.
 
 ## Contact behavior
 

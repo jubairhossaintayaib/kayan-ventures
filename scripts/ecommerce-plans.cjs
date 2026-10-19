@@ -1,0 +1,8 @@
+const plans = [
+  { name: 'Build your momentum', price: '2,500', visitors: '100,000' },
+  { name: 'Make room for more', price: '10,000', visitors: '1,000,000' }
+];
+module.exports = `<section class="section ecommerce-plans" id="plans" aria-labelledby="plans-title">
+<div class="section-heading"><div><p class="eyebrow"><span class="tiny-line"></span> YOUR STORE. SUPPORTED EVERY MONTH.</p><h2 id="plans-title">One complete store.<br>Two ways to grow.</h2></div><div class="section-intro"><p>A beautiful, custom-coded ecommerce website built for fast loading, mobile shopping, and conversion. Backend order management and done-for-you changes and updates are included in both plans.</p></div></div>
+<div class="ecommerce-plan-grid">${plans.map(plan => `<article class="ecommerce-plan"><p class="eyebrow">${plan.name}</p><h3>৳${plan.price}<span>BDT / month</span></h3><p class="plan-visitors">Up to <strong>${plan.visitors}</strong> monthly visitors</p><ul><li>Custom-coded website designed around your brand</li><li>Fast-loading, mobile-optimized shopping experience</li><li>Conversion-focused product pages and checkout</li><li>Backend order management included</li><li>Done-for-you support for changes and updates</li></ul><a class="btn gold" href="https://wa.me/8801314797479?text=${encodeURIComponent(`Hi Kayan Ventures! I’d like to discuss the ৳${plan.price}/month ecommerce plan for up to ${plan.visitors} monthly visitors.`)}" target="_blank" rel="noopener noreferrer">Discuss this plan <span aria-hidden="true">↗</span></a></article>`).join('')}
+</div><p class="plan-footer">The same website, order management, and hands-on support in both plans. Choose the monthly visitor capacity that fits your business.</p></section>`;

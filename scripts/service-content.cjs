@@ -39,23 +39,89 @@ module.exports = [
     related: ['custom-websites', 'landing-pages']
   },
   {
-    id: 'ecommerce', slug: 'ecommerce-websites', name: 'Ecommerce websites', choice: 'Ecommerce website', number: '03',
-    headline: ['Your products.', 'Their next favorite.'],
-    description: 'Custom ecommerce websites for businesses in Bangladesh. Product discovery, clear storefronts, and ordering journeys designed around your customers.',
-    intro: 'Give your products a storefront of their own. We build ecommerce websites that help customers explore what you sell and make it easy to take the next step toward an order.',
-    audience: 'For online brands, retailers, and businesses bringing their products online.',
-    overview: ['A store that fits', 'what you sell.'],
-    overviewText: 'A thoughtful store connects your products, your brand, and the way customers shop. We plan the storefront around your customer journey and the operations that keep your business moving.',
-    features: [
-      ['Products worth exploring', 'Clear product pages with the images, descriptions, variants, and information your customers need.'],
-      ['An organized storefront', 'Collections and navigation that help shoppers find the right product without unnecessary steps.'],
-      ['An ordering journey that fits', 'Plan cart, checkout, and payment or order-request options around your business and the services available to you.'],
-      ['Room for the operations behind it', 'Discuss connections to order and inventory management so the storefront fits your wider workflow.']
+    "id": "ecommerce",
+    "slug": "ecommerce-websites",
+    "name": "Ecommerce websites",
+    "choice": "Ecommerce website",
+    "number": "03",
+    "headline": [
+      "Your products.",
+      "Their next favorite."
     ],
-    checklist: ['Store structure and product content plan', 'Branded, responsive storefront', 'Product and collection pages', 'Agreed cart and checkout workflow', 'Order notifications and integrations as scoped', 'Store testing and management walkthrough'],
-    steps: [['Get to know your store', 'We discuss your products, audience, delivery process, and how you currently receive orders.'], ['Shape the shopping journey', 'We plan and build the storefront, product pages, and ordering experience.'], ['Test from browse to order', 'We review the customer journey and agreed integrations, then prepare your team for launch.']],
-    questions: [['Can you also build order and inventory management?', 'Yes. We offer these together as one service. We’ll agree which parts need to connect to your storefront and how those connections should work.'], ['Can you add local payment or delivery services?', 'We can review the providers you want to use and scope the integration after checking their technical requirements and your account access.']],
-    related: ['order-inventory-management', 'landing-pages']
+    "description": "Custom-coded ecommerce websites from ৳2,500/month in Bangladesh, with fast mobile shopping, backend order management, and done-for-you changes and updates.",
+    "intro": "A beautiful store, built around your brand. Get a custom-coded, fast-loading, mobile-optimized ecommerce website designed to turn browsing into orders—with backend order management and done-for-you support. Plans start at ৳2,500 per month.",
+    "audience": "For online brands, retailers, and businesses bringing their products online.",
+    "overview": [
+      "A store that fits",
+      "what you sell."
+    ],
+    "overviewText": "Both monthly plans include your custom storefront, backend order management, and hands-on support for changes and updates. Choose the visitor capacity that fits your store, while we take care of the website.",
+    "features": [
+      [
+        "Custom code. Your brand.",
+        "A beautiful ecommerce website designed and coded around your products, brand, and customers."
+      ],
+      [
+        "Fast, mobile-first shopping",
+        "Fast-loading pages and mobile-optimized layouts, with a conversion-focused journey from product discovery to checkout."
+      ],
+      [
+        "Order management included",
+        "Manage incoming orders, customer details, and order statuses through your website’s backend."
+      ],
+      [
+        "Changes? We take care of them.",
+        "Done-for-you support is included in both plans. Bring us the changes and updates you need, and we’ll handle the website work."
+      ]
+    ],
+    "checklist": [
+      "Custom-coded, branded ecommerce website",
+      "Fast-loading, mobile-optimized storefront",
+      "Conversion-focused product and checkout pages",
+      "Backend order management",
+      "Monthly visitor capacity for your chosen plan",
+      "Done-for-you support for changes and updates"
+    ],
+    "steps": [
+      [
+        "Choose your plan",
+        "Pick up to 100,000 monthly visitors for ৳2,500/month or up to 1,000,000 for ৳10,000/month. We’ll discuss your products, brand, and order workflow."
+      ],
+      [
+        "Build your store",
+        "We design and code your storefront, connect the backend order management, and check the shopping experience on mobile and desktop."
+      ],
+      [
+        "Launch with ongoing support",
+        "After launch, we continue to handle the website changes and updates you need through your included done-for-you support."
+      ]
+    ],
+    "questions": [
+      [
+        "What are the monthly plans?",
+        "৳2,500 per month supports up to 100,000 monthly visitors. ৳10,000 per month supports up to 1,000,000 monthly visitors. Both include a custom-coded ecommerce website, backend order management, and done-for-you support."
+      ],
+      [
+        "What is included in both plans?",
+        "A beautiful, custom-coded, fast-loading and mobile-optimized ecommerce website, designed with conversion in mind. You also get backend order management and done-for-you support for changes and updates."
+      ],
+      [
+        "Will you handle website changes after launch?",
+        "Yes. Both plans include done-for-you support for the changes and updates you need. Contact us with your requirements and we’ll take care of the website work."
+      ],
+      [
+        "Is backend order management included?",
+        "Yes. Backend order management is included in both ecommerce plans, so your team can manage incoming orders and their progress. If you also need inventory workflows, we can discuss those requirements together."
+      ],
+      [
+        "Can you add local payment or delivery services?",
+        "We can review the providers you want to use and discuss their technical requirements and the account access needed."
+      ]
+    ],
+    "related": [
+      "order-inventory-management",
+      "landing-pages"
+    ]
   },
   {
     id: 'landing-pages', slug: 'landing-pages', name: 'Landing pages', choice: 'Landing page', number: '04',
