@@ -17,7 +17,7 @@ function homeLinks(markup) {
 const sharedHead = extract(/<head>[\s\S]*?<\/head>/, 'head');
 const sharedHeader = homeLinks(extract(/<header[\s\S]*?<\/header>/, 'header'));
 const sharedFooter = homeLinks(extract(/<footer>[\s\S]*?<\/footer>/, 'footer'));
-const whatsapp = service => `https://wa.me/8801314797479?text=${encodeURIComponent(`Hi Kayan Ventures! I’d like to discuss ${service.name.toLowerCase()}.`)}`;
+const whatsapp = service => `https://wa.me/8801313949313?text=${encodeURIComponent(`Hi Kayan Ventures! I’d like to discuss ${service.name.toLowerCase()}.`)}`;
 const lines = value => value.map(escape).join('<br>');
 const list = items => items.map(item => `<li><span aria-hidden="true">✓</span>${escape(item)}</li>`).join('\n');
 

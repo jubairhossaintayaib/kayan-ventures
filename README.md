@@ -40,6 +40,6 @@ Illustrations are original HTML/CSS. Celures is listed in the footer as our sist
 
 ## Contact behavior
 
-All WhatsApp links use `https://wa.me/8801314797479` (local number: 01314797479).
+All WhatsApp links use `https://wa.me/8801313949313` (local number: 01313949313).
 The form validates required fields and prepares an encoded WhatsApp message. The visitor opens WhatsApp and chooses whether to send it. Nothing is sent, stored, or logged by this site. Editing a field clears any previously prepared message.
 There is no contact API, database, email delivery, or analytics integration yet. Replace the frontend submit handler when a backend is chosen. With JavaScript disabled, visitors can use the direct WhatsApp link.

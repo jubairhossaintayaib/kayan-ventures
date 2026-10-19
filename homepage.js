@@ -42,7 +42,7 @@ if (form) {
     const data = new FormData(form);
     const value = key => String(data.get(key) || '').trim();
     const message = ['Hi Kayan Ventures! I’d like to discuss a project.', '', `Name: ${value('name')}`, ...(value('business') ? [`Business: ${value('business')}`] : []), `Contact: ${value('contact')}`, `Interested in: ${value('service')}`, '', value('message')].join('\n');
-    messageLink.href = `https://wa.me/8801314797479?text=${encodeURIComponent(message)}`;
+    messageLink.href = `https://wa.me/8801313949313?text=${encodeURIComponent(message)}`;
     result.hidden = false;
     messageLink.focus({ preventScroll: true });
     result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
